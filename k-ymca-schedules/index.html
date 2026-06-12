@@ -7,54 +7,45 @@
 
   <title>YMCA Schedules</title>
 
-  <link href="main.css" rel="stylesheet">
-  <script src="main.js"></script>
-
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial;
       text-align: center;
-      margin: 0;
       padding: 20px;
     }
 
     h1 {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .btn {
       width: 85%;
-      padding: 22px;
-      margin: 16px auto;
-      font-size: 22px;
+      padding: 20px;
+      margin: 12px auto;
+      font-size: 20px;
       border: 2px solid black;
       border-radius: 12px;
       background: white;
     }
 
-    .btn:active {
-      background: #ddd;
+    #status {
+      margin-top: 20px;
+      font-size: 14px;
     }
   </style>
+
+  <script src="main.js"></script>
 </head>
 
-<body onload="onPageLoad()">
+<body onload="init()">
 
   <h1>YMCA Schedules</h1>
 
-  <button class="btn" onclick="openSchedule('group')">
-    Group Exercise
-  </button>
+  <button class="btn" onclick="openSchedule('group')">Group Exercise</button>
+  <button class="btn" onclick="openSchedule('pool')">Pool Schedule</button>
+  <button class="btn" onclick="openSchedule('basketball')">Basketball Courts</button>
 
-  <button class="btn" onclick="openSchedule('pool')">
-    Pool Schedule
-  </button>
-
-  <button class="btn" onclick="openSchedule('basketball')">
-    Basketball Courts
-  </button>
-
-  <p id="status"></p>
+  <p id="status">Loading schedules...</p>
 
 </body>
 
