@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Name: YMCA Schedules
+# Name: K YMCA Schedules
 # Author: nicotapiero
 
 SOURCE_DIR="/mnt/us/documents/k-ymca-schedules"
