@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8">
+
+  <title>YMCA Schedules</title>
+
+  <link href="main.css" rel="stylesheet">
+  <script src="main.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      width: 85%;
+      padding: 22px;
+      margin: 16px auto;
+      font-size: 22px;
+      border: 2px solid black;
+      border-radius: 12px;
+      background: white;
+    }
+
+    .btn:active {
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body onload="onPageLoad()">
+
+  <h1>YMCA Schedules</h1>
+
+  <button class="btn" onclick="openSchedule('group')">
+    Group Exercise
+  </button>
+
+  <button class="btn" onclick="openSchedule('pool')">
+    Pool Schedule
+  </button>
+
+  <button class="btn" onclick="openSchedule('basketball')">
+    Basketball Courts
+  </button>
+
+  <p id="status"></p>
+
+</body>
+
+</html>
